@@ -56,6 +56,16 @@ elif city == 'Queenstown':
     fig, ax = plt.subplots()
     ax = sns.countplot(x = 'sex', hue = 'survived', data = south)
     st.pyplot(fig)
+
+
+hide_menu = """
+<style>
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+header {visibility: hidden;}
+</style>
+"""
+st.markdown(hide_menu, unsafe_allow_html=True)
 # st.sidebar.radio('Select City', )
 
 
