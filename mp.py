@@ -8,7 +8,7 @@ df= sns.load_dataset('titanic')
 
 
 st.title('Titanic Dataset Visualization')
-sel = st.sidebar.radio('Display DataFrame', ('yes', 'no'))
+sel = st.sidebar.radio('Display DataFrame', ('yes', 'no'), index = 1)
 
 if sel == 'yes':
     st.table(df)
